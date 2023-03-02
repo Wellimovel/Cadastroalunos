@@ -1,3 +1,5 @@
+
+
 body{
     background-color: #ffffff;
     display: flex;
@@ -17,100 +19,71 @@ body{
     
 }
 
-img { opacity : 0.8;
- }
+img { opacity : 0.8;}
 
 @font-face {
     font-family: "Quicksand-VariableFont_wght";
     src: url("fontes/Quicksand-VariableFont_wght.ttf") format("truetype");
   }
-nav{
+
+ 
+  main{
+   
+    position: relative;
+    right: 10px;
+    top: -60px;
+    flex-grow: 1;
     display: flex;
-    margin-top: -35px;
-    margin-right: 20px;
     justify-content: right;
-    height: 100vh;
+    
+  }
+  .item{
+      
+      width: 50px;
+      height:50px;
+      box-shadow: 0 0 10px #228293;
+      display: none;  
+      justify-content: center;
+      align-items: center;     
+
+  }
+  .item:hover{
+      
+    width: 50px;
+    height:50px;
+    box-shadow: 0 0 10px #15505a;
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
 }
-  a{
-    text-decoration: none;
-    color: #2d336f ;
-    opacity : 0.6;
-    font-size: 24px;
-    text-decoration: solid;
-    margin-left: 30px;
 
-    
+
+
+@media (max-width: 600px) {
+  .menu-list {
+    display: none; /* esconde o botão quando a tela tiver largura menor que 600px */
     
   }
-  a:hover {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  }
   
+  .item {
+    display: flex; /* exibe a lista como inline-block quando a tela tiver largura menor que 600px */
+  }
+}
 
 
 
+.LINKLISTA{
 
-
-
-
-  nav {
-    display: flex;
-    margin-top: -35px;
-    margin-right: 20px;
-    justify-content: right;
-    height: 100vh;
-  }
+  color: #2d336f ;
+  opacity : 0.6;
+  font-size: 24px;
+  text-decoration: solid;
+  margin-left: 30px;
+ 
   
-  .logo {
-    font-size: 1.5rem;
-  }
   
-  .menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
   
-  .menu li {
-    margin: 0 1rem;
-  }
-  
-  .menu a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .menu-icon {
-    cursor: pointer;
-    font-size: 1.5rem;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 4rem;
-      left: 0;
-      right: 0;
-      background-color: #333;
-      padding: 1rem;
-    }
-  
-    .menu li {
-      margin: 0.5rem 0;
-    }
-  
-    .menu a {
-      font-size: 1.2rem;
-    }
-  
-    .menu-icon i.fa {
-      color: #fff;
-    }
-  
-    .menu.show {
-      display: flex;
-    }
-  }
+}
+.LINKLISTA:hover {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
